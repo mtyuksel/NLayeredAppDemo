@@ -1,0 +1,16 @@
+﻿@model Northwind.WebApplicationUI.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+    @foreach (var product in Model.ProductList)
+    {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.ProductName</td>
+        </tr>
+    }
+
+</table>
